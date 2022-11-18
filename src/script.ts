@@ -239,3 +239,30 @@ calculation = (a: number, b: number, c: string) => {
 console.log(calculation(8, 4, 'add'));
 
 */
+
+
+/*
+// class
+
+
+class Person {
+    name: string;
+    age: number;
+    country: string;
+
+    constructor(n: string, a: number, c: string) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+
+    my_detail() {
+        console.log(`I am ${this.name} from ${this.country} and I am ${this.age} years old.`)
+    }
+}
+
+const koushik = new Person('Koushik', 42, 'Bangladesh');
+
+console.log(koushik);
+
+*/
