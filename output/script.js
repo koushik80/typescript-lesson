@@ -207,3 +207,20 @@ const courseDetails = (student: courseType) => {
     console.log(`The course is taken by ${student.subject} and subject id is ${student.sub_id}`);
 };
 */
+/*
+// Function Signatures
+
+
+let calculation: (a: number, b: number, c: string) => number;
+
+calculation = (a: number, b: number, c: string) => {
+    if (c == 'add') {
+        return a + b;
+    } else {
+        return a - b;
+    }
+};
+
+console.log(calculation(8, 4, 'add'));
+
+*/ 
