@@ -7,4 +7,7 @@ export class Person {
     my_detail() {
         console.log(`I am ${this.name} from ${this.country} and I am ${this.age} years old.`);
     }
+    getProperty() {
+        return this.age;
+    }
 }

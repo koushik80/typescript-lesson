@@ -1,6 +1,6 @@
 "use strict";
 //const country = "Finland";
-//const language = "Finnish"
+//const language = "Finnish";
 //console.log(country);
 //console.log(language);
 /*
@@ -290,3 +290,40 @@ console.log(koushik);
 console.log(koushik.name); // it won't come error as we didn't use private
 console.log(koushik.country);
 */
+// Interfaces
+/*
+// in object
+interface RectangleOptions {
+    width: number;
+    length: number;
+    height: number;
+}
+
+function drawRectangle(options: RectangleOptions) {
+    let width = options.width;
+    let length = options.length;
+    let height = options.height;
+}
+
+let threeDoptions = {
+    width: 30,
+    length: 20,
+    height: 10,
+}
+
+drawRectangle(threeDoptions);
+
+console.log(drawRectangle);
+*/
+/*
+// in class
+
+import { Person } from "./classes/Person.js" ;
+
+const koushik = new Person('Koushik', 42, 'Bangladesh');
+let joe = new Person('Joe', 40, 'USA');
+
+console.log(koushik);
+console.log(koushik.name);
+console.log(koushik.country);
+*/ 
