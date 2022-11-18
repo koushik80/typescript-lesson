@@ -10,7 +10,7 @@ const marks = 100;
 
 function enroll() {
     console.log('Course enrollment is in progress...')
-    const promise = new Promise(function (resolve, reject) {
+    const promise = new Promise<void>(function (resolve, reject) {
         setTimeout(function () {
             if (paymentSuccess) {
                 resolve();
@@ -19,11 +19,11 @@ function enroll() {
             }
         }, 2000);
     });
-    return promise
+    return promise;
 }
 function paymentProgress() {
     console.log('Payment method is in progress...')
-    const promise = new Promise(function (resolve, reject) {
+    const promise = new Promise<void>(function (resolve, reject) {
         setTimeout(function () {
             if (marks >= 80) {
                 resolve();
@@ -32,7 +32,7 @@ function paymentProgress() {
             }
         }, 3000);
     });
-    return promise
+    return promise;
 }
 function getCertificate() {
     console.log('Preparing for Certificate.')
@@ -41,7 +41,7 @@ function getCertificate() {
             resolve('Congrats! You got the certificate.');
         }, 1000);
     });
-    return promise
+    return promise;
 }
 async function course() {
     try {
