@@ -227,7 +227,6 @@ console.log(calculation(8, 4, 'add'));
 /*
 // class
 
-
 class Person {
     name: string;
     age: number;
@@ -248,4 +247,35 @@ const koushik = new Person('Koushik', 42, 'Bangladesh');
 
 console.log(koushik);
 
-*/ 
+*/
+/*
+// Access Modifiers
+// by default all properties are public
+// if we don't want to access outside from the class we can use access modifier as private
+
+class Person {
+    public name: string;
+    private age: number;
+    readonly country: string;
+
+    constructor(n: string, a: number, c: string) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+
+    my_detail() {
+        console.log(`I am ${this.name} from ${this.country} and I am ${this.age} years old.`)
+    }
+}
+
+const koushik = new Person('Koushik', 42, 'Bangladesh');
+
+koushik.age = 32; // it's coming error as we used private
+koushik.country = 'Finland'; // it's readonly property
+
+console.log(koushik);
+console.log(koushik.name); // it won't come error as we didn't use private
+console.log(koushik.age); // it's coming error as we used private
+console.log(koushik.country);
+*/
