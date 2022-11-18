@@ -115,19 +115,21 @@ z.push('banana', 'mango', 'apple', 7, 9, 12, true);
 console.log(z);
 */
 
+/*
 // for object
 
 let x: object;
 x = [4, 5, 6];  // it will accept array as array is a certain type of object
 console.log(x);
 
-
+// declared as a pattern
 let c: {
     name: string;
     place: string;
     road_no: number;
     adult: boolean;
 };
+//c= [] // it will come error as it was declared as a pattern
 
 c = {
     name: "koushik",
@@ -137,3 +139,39 @@ c = {
 };
 
 console.log(c);
+*/
+
+// Dynamic type or Any type
+
+/*
+// variable
+let a: any;  //or let a;
+// as we declared as any type so it's possible to assign number or string or others
+
+a = 10;
+a = 'Finland';
+a = true;
+a = false;
+*/
+
+/*
+// array
+let a: any[] = [];
+
+a.push('banana', 'mango', 'apple', 2, 4, true, false);
+console.log(a);
+*/
+
+/*
+// object
+
+let a: {
+    name: any,
+    age: any
+};
+
+a = {
+    name: 'Joe',
+    age: 38
+};
+*/
