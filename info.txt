@@ -1,0 +1,14 @@
+setup info:
+
+tsc initialize:  tsc --init
+
+
+changes in tsconfig.json:
+
+"outDir": "./output",  (desired folder name)
+"rootDir": "./src",  (desired folder name)
+"module": "es2015",
+"moduleResolution": "node",
+
+changes in html file:
+<script type="module" src="./output/script.js"></script>

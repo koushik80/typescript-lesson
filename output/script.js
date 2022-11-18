@@ -278,4 +278,15 @@ console.log(koushik);
 console.log(koushik.name); // it won't come error as we didn't use private
 console.log(koushik.age); // it's coming error as we used private
 console.log(koushik.country);
+
+*/
+/*
+// Module System
+import { Person } from "./classes/Person.js" ;
+
+const koushik = new Person('Koushik', 42, 'Bangladesh');
+
+console.log(koushik);
+console.log(koushik.name); // it won't come error as we didn't use private
+console.log(koushik.country);
 */

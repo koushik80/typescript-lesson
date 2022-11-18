@@ -1,9 +1,0 @@
-setup info:
-
-tsc initialize:  tsc --init
-
-
-changes in tsconfig.json:
-
-"outDir": "./output",  (desired folder name)
-"rootDir": "./src",  (desired folder name)
