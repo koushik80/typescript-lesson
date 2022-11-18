@@ -1,3 +1,5 @@
+setup info:
+
 tsc initialize:  tsc --init
 
 

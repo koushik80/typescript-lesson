@@ -7,7 +7,7 @@
 /*
 const paymentSuccess = true;
 const marks = 100;
-
+//we used void cause value is absent
 function enroll() {
     console.log('Course enrollment is in progress...')
     const promise = new Promise<void>(function (resolve, reject) {
@@ -174,4 +174,31 @@ a = {
     name: 'Joe',
     age: 38
 };
+*/
+
+// how to use functions
+
+/*
+//let sumInt = Function; // Function  has to be mentioned in capital letter
+ const sumInt = (x:any, y:any, z?:any) => { // here used ? with z as it's optional
+    if (x == y) {
+        return 3 * (x + y);
+    } else {
+        return (x + y);
+    }
+}
+console.log(sumInt(10, 20));
+console.log(sumInt(10, 10));
+*/
+
+/*
+const sumInt = (x:any, y:any, z:any="true") => {// we can use this way too by declaring a value
+    if (x == y) {
+        return 3 * (x + y);
+    } else {
+        return (x + y);
+    }
+}
+console.log(sumInt(10, 20));
+console.log(sumInt(10, 10));
 */
