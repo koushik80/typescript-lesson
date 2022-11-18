@@ -202,3 +202,23 @@ const sumInt = (x:any, y:any, z:any="true") => {// we can use this way too by de
 console.log(sumInt(10, 20));
 console.log(sumInt(10, 10));
 */
+
+/*
+// Type Aliases
+
+type studentType = string | number;
+type studentHis = { name: string; age: number}
+type courseType = { subject: string; sub_id: number }
+
+const studentDetails = (
+    id: studentType,
+    student: studentHis
+) => {
+    console.log(`Student id is ${id}, name is ${student.name} and age is ${student.age}`);
+};
+
+const courseDetails = (student: courseType) => {
+    console.log(`The course is taken by ${student.subject} and subject id is ${student.sub_id}`);
+};
+*/
+
