@@ -389,4 +389,10 @@ const response1: resAPI<object> = {
     }
 }
 console.log(response1);
+*/
+/*
+// Tuples : oder is important in tuples
+
+let a = [4, 'TS', { T: 2 }];
+let b: [number, string, object] = [3, 'JS', { c: 1 }];
 */ 
