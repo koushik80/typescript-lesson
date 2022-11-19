@@ -394,3 +394,24 @@ const response1: resAPI<object> = {
     }
 }
 */
+
+/*
+// Enum Types
+
+enum rType {SUCCESS, FAILURE, UNAUTHENTICATED, FORBIDDEN }
+interface resAPI<T> {
+    status: number;
+    type: rType;
+    data: T;
+}
+
+const response1: resAPI<object> = {
+    status: 200,
+    type: rType.SUCCESS,
+    data: {
+        name: 'Test',
+        port: 3000,
+    }
+}
+console.log(response1);
+*/
