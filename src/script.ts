@@ -348,3 +348,49 @@ console.log(koushik);
 console.log(koushik.name);
 console.log(koushik.country);
 */
+
+// Generics
+
+/*
+// for object
+
+const personDetail = <T extends {
+    name: string;
+    age: number;
+}>(obj: T) => { //used <T extends object> for destructuring object
+    let reg_num = Math.floor(Math.random() * 100);
+    return { ...obj, reg_num };
+};
+
+let person = personDetail({
+    name: "koushik",
+    age: 42,
+    country: "Finland",
+});
+
+person.name = "Rosa";
+person.age = 9;
+person.country = "Finland";
+
+console.log(person);
+
+*/
+
+/*
+// for interface
+
+interface resAPI<T> {
+    status: number;
+    type: string;
+    data: T;
+}
+
+const response1: resAPI<object> = {
+    status: 200,
+    type: 'fair',
+    data: {
+        name: 'Test',
+        port: 3000,
+    }
+}
+*/
